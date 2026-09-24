@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Watch Video - HD Quality</title>
+
+<meta name="description" content="Watch Video in HD Quality">
+
+
+<!-- ==================================================
+     HISTATS.COM
+================================================== -->
+
+<!-- Histats.com START (async) -->
+<script type="text/javascript">
+var _Hasync = _Hasync || [];
+
+_Hasync.push(['Histats.start', '1,4967720,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+
+(function() {
+
+    var hs = document.createElement('script');
+
+    hs.type = 'text/javascript';
+    hs.async = true;
+
+    hs.src = '//s10.histats.com/js15_as.js';
+
+    (document.getElementsByTagName('head')[0] ||
+     document.getElementsByTagName('body')[0])
+     .appendChild(hs);
+
+})();
+</script>
+
+<noscript>
+<a href="/" target="_blank">
+<img
+src="//sstatic1.histats.com/0.gif?4967720&101"
+alt="web site hit counter"
+border="0">
+</a>
+</noscript>
+<!-- Histats.com END -->
+
+
+<!-- ==================================================
+     AD SCRIPT 1
+================================================== -->
+
+<script
+data-cfasync="false"
+src="https://ahuramazda.org/1/b31990a5b3356ad11d1f605dd9cb34fd">
+</script>
+
+
+<!-- ==================================================
+     AD SCRIPT 2
+================================================== -->
+
+<script
+data-cfasync="false"
+src="https://brijmohan.org/14/76b23629e28fb15eedfe61498651d4c8">
+</script>
+
+
+<!-- ==================================================
+     AD SCRIPT 3
+================================================== -->
+
+<script
+async="async"
+data-cfasync="false"
+src="https://pl31484140.profitableratecpmnetwork.com/950e348b7f7d203c357c144d35f2f5f2/invoke.js">
+</script>
+
+
+<style>
+
+/* ==================================================
+   BASIC
+================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background: #111;
+
+    color: #fff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    text-align: center;
+
+}
+
+
+/* ==================================================
+   MAIN CONTAINER
+================================================== */
+
+.container {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 20px;
+
+}
+
+
+/* ==================================================
+   TITLE
+================================================== */
+
+h1 {
+
+    margin: 10px 0 8px;
+
+    font-size: 28px;
+
+}
+
+
+.subtitle {
+
+    color: #aaa;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ==================================================
+   AD CONTAINER
+================================================== */
+
+#ad-container {
+
+    width: 100%;
+
+    margin: 20px auto;
+
+    text-align: center;
+
+}
+
+
+/* ==================================================
+   VIDEO / IMAGE BOX
+================================================== */
+
+.video-box {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    background: #000;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 25px
+        rgba(0,0,0,0.7);
+
+}
+
+
+/* ==================================================
+   IMAGE
+================================================== */
+
+.video-image {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    min-height: 250px;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    transition:
+        opacity 0.4s ease;
+
+}
+
+
+/* ==================================================
+   IMAGE OVERLAY
+================================================== */
+
+.overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(0,0,0,0.18);
+
+}
+
+
+/* ==================================================
+   PLAY BUTTON
+================================================== */
+
+.play-button {
+
+    width: 80px;
+
+    height: 80px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,0,0,0.90);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 35px;
+
+    color: #fff;
+
+    box-shadow:
+        0 0 25px
+        rgba(255,0,0,0.5);
+
+}
+
+
+/* ==================================================
+   WATCH BUTTON
+================================================== */
+
+.watch-button {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 40px;
+
+    background: #e60000;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.watch-button:hover {
+
+    background: #ff2222;
+
+    transform: scale(1.03);
+
+}
+
+
+/* ==================================================
+   COUNTDOWN
+================================================== */
+
+.countdown-box {
+
+    margin-top: 20px;
+
+    font-size: 17px;
+
+    color: #ddd;
+
+}
+
+
+#countdown {
+
+    color: #ff3333;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+}
+
+
+/* ==================================================
+   INFO BOX
+================================================== */
+
+.info-box {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #1c1c1c;
+
+    border-radius: 10px;
+
+    color: #ccc;
+
+    line-height: 1.6;
+
+}
+
+
+/* ==================================================
+   FEATURES
+================================================== */
+
+.features {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+
+.feature {
+
+    background: #1b1b1b;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    color: #ccc;
+
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+
+    margin-top: 40px;
+
+    padding: 20px;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        padding: 12px;
+
+    }
+
+
+    h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .play-button {
+
+        width: 65px;
+
+        height: 65px;
+
+        font-size: 28px;
+
+    }
+
+
+    .watch-button {
+
+        width: 100%;
+
+        font-size: 17px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- ==================================================
+         TITLE
+    ================================================== -->
+
+    <h1>
+        Watch Video - HD Quality
+    </h1>
+
+
+    <div class="subtitle">
+        Click the image or WATCH VIDEO button to continue
+    </div>
+
+
+    <!-- ==================================================
+         AD
+    ================================================== -->
+
+    <div id="ad-container">
+
+        <div id="container-950e348b7f7d203c357c144d35f2f5f2"></div>
+
+    </div>
+
+
+    <!-- ==================================================
+         IMAGE BOX
+    ================================================== -->
+
+    <div
+        class="video-box"
+        id="videoBox"
+    >
+
+
+        <img
+            id="videoImage"
+            class="video-image"
+
+            src="https://raw.githubusercontent.com/enjoytiimes/virallink/main/watch6.png"
+
+            alt="Watch Video"
+        >
+
+
+        <div class="overlay">
+
+            <div class="play-button">
+                ▶
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ==================================================
+         WATCH BUTTON
+    ================================================== -->
+
+    <button
+        class="watch-button"
+        id="watchButton"
+    >
+
+        ▶ WATCH VIDEO
+
+    </button>
+
+
+    <!-- ==================================================
+         COUNTDOWN
+    ================================================== -->
+
+    <div class="countdown-box">
+
+        Video will open automatically in
+
+        <span id="countdown">
+            10
+        </span>
+
+        seconds
+
+    </div>
+
+
+    <!-- ==================================================
+         INFO
+    ================================================== -->
+
+    <div class="info-box">
+
+        <strong>HD Video</strong>
+
+        <br>
+
+        Click the image or WATCH VIDEO button
+        to continue.
+
+        <br>
+
+        Please wait while the video page is loading.
+
+    </div>
+
+
+    <!-- ==================================================
+         FEATURES
+    ================================================== -->
+
+    <div class="features">
+
+        <div class="feature">
+            ✓ HD Quality
+        </div>
+
+        <div class="feature">
+            ✓ Fast Loading
+        </div>
+
+        <div class="feature">
+            ✓ Mobile Friendly
+        </div>
+
+        <div class="feature">
+            ✓ Easy Access
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        © 2026 Watch Video
+
+    </footer>
+
+
+</div>
+
+
+
+<script>
+
+/* ==================================================
+   DESTINATION LINK
+================================================== */
+
+const destination =
+"https://auctionr.org/4/c959177206c6902f227d57c909825d9e";
+
+
+/* ==================================================
+   GITHUB IMAGES
+================================================== */
+
+const images = [
+
+    "https://raw.githubusercontent.com/enjoytiimes/virallink/main/watch6.png",
+
+    "https://raw.githubusercontent.com/enjoytiimes/virallink/main/Screenshot%202026-09-24%20181252.png",
+
+    "https://raw.githubusercontent.com/enjoytiimes/virallink/main/Screenshot%202026-09-24%20161109.png"
+
+];
+
+
+/* ==================================================
+   IMAGE ELEMENT
+================================================== */
+
+let currentImage = 0;
+
+const videoImage =
+document.getElementById("videoImage");
+
+
+/* ==================================================
+   AUTOMATIC IMAGE CHANGE
+   EVERY 3 SECONDS
+================================================== */
+
+setInterval(function() {
+
+    currentImage++;
+
+    if (
+        currentImage >= images.length
+    ) {
+
+        currentImage = 0;
+
+    }
+
+
+    /* Fade out */
+
+    videoImage.style.opacity = "0";
+
+
+    setTimeout(function() {
+
+        /* Change image */
+
+        videoImage.src =
+        images[currentImage];
+
+
+        /* Fade in */
+
+        videoImage.style.opacity = "1";
+
+    }, 250);
+
+
+}, 3000);
+
+
+/* ==================================================
+   OPEN DESTINATION IN NEW TAB
+================================================== */
+
+function goToDestination() {
+
+    window.open(
+        destination,
+        "_blank"
+    );
+
+}
+
+
+/* ==================================================
+   IMAGE CLICK
+================================================== */
+
+document
+.getElementById("videoBox")
+.addEventListener(
+    "click",
+    function() {
+
+        goToDestination();
+
+    }
+);
+
+
+/* ==================================================
+   WATCH BUTTON CLICK
+================================================== */
+
+document
+.getElementById("watchButton")
+.addEventListener(
+    "click",
+    function() {
+
+        goToDestination();
+
+    }
+);
+
+
+/* ==================================================
+   10 SECOND COUNTDOWN
+================================================== */
+
+let seconds = 10;
+
+const countdown =
+document.getElementById("countdown");
+
+
+const timer = setInterval(
+function() {
+
+    seconds--;
+
+    countdown.textContent =
+    seconds;
+
+
+    if (seconds <= 0) {
+
+        clearInterval(timer);
+
+        goToDestination();
+
+    }
+
+},
+1000
+);
+
+</script>
+
+
+</body>
+</html>
