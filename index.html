@@ -497,16 +497,12 @@ footer {
         id="videoBox"
     >
 
-
         <img
             id="videoImage"
             class="video-image"
-
             src="https://raw.githubusercontent.com/enjoytiimes/virallink/main/watch6.png"
-
             alt="Watch Video"
         >
-
 
         <div class="overlay">
 
@@ -515,7 +511,6 @@ footer {
             </div>
 
         </div>
-
 
     </div>
 
@@ -528,9 +523,7 @@ footer {
         class="watch-button"
         id="watchButton"
     >
-
         ▶ WATCH VIDEO
-
     </button>
 
 
@@ -601,9 +594,7 @@ footer {
     ================================================== -->
 
     <footer>
-
         © 2026 Watch Video
-
     </footer>
 
 
@@ -622,22 +613,25 @@ const destination =
 
 
 /* ==================================================
-   GITHUB IMAGES
+   3 GITHUB IMAGES
 ================================================== */
 
 const images = [
 
+    /* IMAGE 1 */
     "https://raw.githubusercontent.com/enjoytiimes/virallink/main/watch6.png",
 
-    "https://github.com/enjoytiimes/virallink/blob/main/milf_001-7.gif",
+    /* IMAGE 2 - GIF */
+    "https://raw.githubusercontent.com/enjoytiimes/virallink/main/milf_001-7.gif",
 
+    /* IMAGE 3 */
     "https://raw.githubusercontent.com/enjoytiimes/virallink/main/Screenshot%202026-09-24%20161109.png"
 
 ];
 
 
 /* ==================================================
-   IMAGE ELEMENT
+   CURRENT IMAGE
 ================================================== */
 
 let currentImage = 0;
@@ -664,20 +658,13 @@ setInterval(function() {
     }
 
 
-    /* Fade out */
-
     videoImage.style.opacity = "0";
 
 
     setTimeout(function() {
 
-        /* Change image */
-
         videoImage.src =
         images[currentImage];
-
-
-        /* Fade in */
 
         videoImage.style.opacity = "1";
 
@@ -688,7 +675,7 @@ setInterval(function() {
 
 
 /* ==================================================
-   OPEN DESTINATION IN NEW TAB
+   REDIRECT FUNCTION
 ================================================== */
 
 function goToDestination() {
@@ -734,7 +721,7 @@ document
 
 
 /* ==================================================
-   10 SECOND COUNTDOWN
+   10 SECOND AUTO REDIRECT
 ================================================== */
 
 let seconds = 10;
